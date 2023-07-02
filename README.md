@@ -4,7 +4,8 @@ This repository contains two versions of Selenium login test functionality for t
 
 ## Files
 
-- `LoginSelenium.java`: Developed with a thorough understanding of the topic.
+- **`chromedriver_win32`**: This is the chromedriver downloaded from Selenium, specifically compatible with Chrome version build 112.
+- `LoginSelenium.java`: Developed with a comprehensive understanding of the topic.
 - `LoginSeleniumProper.java`: Similar to `LoginSelenium.java`, but implemented using Sauce Labs documentation methods.
 
 ## Description
@@ -23,10 +24,16 @@ Follow the steps below to run the tests:
 
 ## Setup
 
-Before running the tests, ensure that you have the following dependencies installed and configured:
+Before running the tests, ensure you have the following dependencies installed and configured:
 
-- Selenium WebDriver
-- Sauce Labs account and credentials
+- Selenium WebDriver (version 4.10.0)
+- Selenium Dev Tools (version 112) *Depending on your chrome version build
+- JUnit (version 4.13) and JUnit Jupiter API (version 5.9.2)
+- Selenium Chrome Driver (version 4.10.0)
+- SLF4J (version 1.6.1)
+
+Installing these dependencies will help avoid errors and warnings during test execution.
+Please note that the version of Selenium Dev Tools may vary depending on your Chrome version build.
 
 ## Contribution
 
