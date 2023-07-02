@@ -26,8 +26,11 @@ public class LoginSeleniumProper {
 
     public static void main(String[] args) {
         
-        System.setProperty("webdriver.chrome.driver", "D:\\Documents\\NetBeansProjects\\LoginSelenium\\src\\main\\java\\chromedriver_win32\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "D:\\Documents\\NetBeansProjects\\LoginSelenium\\src\\main\\java\\chromedriver_win32\\chromedriver.exe");
         
+        String projectPath = System.getProperty("user.dir");
+        String driverPath = projectPath + "/src/main/java/chromedriver_win32/chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver", driverPath);
         //Instantiate the WebDriver ojbect with variable driver
         WebDriver driver = new ChromeDriver();
         

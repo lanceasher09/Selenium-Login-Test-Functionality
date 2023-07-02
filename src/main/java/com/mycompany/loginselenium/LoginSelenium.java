@@ -25,7 +25,11 @@ public class LoginSelenium {
     protected RemoteWebDriver driver;
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "D:\\Documents\\NetBeansProjects\\LoginSelenium\\src\\main\\java\\chromedriver_win32\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "D:\\Documents\\NetBeansProjects\\LoginSelenium\\src\\main\\java\\chromedriver_win32\\chromedriver.exe"); //Change depe
+        
+        String projectPath = System.getProperty("user.dir");
+        String driverPath = projectPath + "/src/main/java/chromedriver_win32/chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver", driverPath);
         WebDriver driver = new ChromeDriver();
          
         // Scenario 1: Log in using standard user
